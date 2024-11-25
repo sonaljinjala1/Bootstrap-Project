@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Login Page</title>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url('travel-background.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+   </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Traveling Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <span id="emailError" class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <span id="passwordError" class="error-message"></span>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>function validateForm() {
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        let isValid = true;
+    
+        // Clear previous error messages
+        document.getElementById('emailError').style.display = 'none';
+        document.getElementById('passwordError').style.display = 'none';
+    
+        // Email validation
+        if (email === "") {
+            document.getElementById('emailError').textContent = "Please enter your email.";
+            document.getElementById('emailError').style.display = 'block';
+            isValid = false;
+        } else if (!validateEmail(email)) {
+            document.getElementById('emailError').textContent = "Please enter a valid email.";
+            document.getElementById('emailError').style.display = 'block';
+            isValid = false;
+        }
+    
+        // Password validation
+        if (password === "") {
+            document.getElementById('passwordError').textContent = "Please enter your password.";
+            document.getElementById('passwordError').style.display = 'block';
+            isValid = false;
+        } else if (password.length < 8) {
+            document.getElementById('passwordError').textContent = "Password must be at least 8 characters long.";
+            document.getElementById('passwordError').style.display = 'block';
+            isValid = false;
+        }
+    
+        // If validation passes, show success message and redirect
+        if (isValid) {
+            alert("Login is successful!");
+            window.location.href = 'index.html'; // Redirect to index.html
+            return false; // Prevent form submission
+        }
+    
+        return false; // Prevent form submission if validation fails
+    }
+    
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+    </script>
+</body>
+</html>

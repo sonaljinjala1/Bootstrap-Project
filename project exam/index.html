@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="assets/img/2.png" type="image/x-icon" style="border-radius: 50%;">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!--fonts awesome-icon-all.min -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+ 
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <section>
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+    </section>
+
+
+    <header style="padding:20px 60px !important; margin:  0px 0px;  ">
+        <nav class="navbar navbar-expand-lg  ">
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo-black.png" alt="" style="object-fit: cover; padding-top: 0;" width="100px" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#header-menu"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarNavAltMarkup"
+                style="background-color: transparent;">
+                <div class="navbar-nav">
+                    <div class="menu">
+                        <ul class="d-flex " style="margin-bottom: 0  !important;">
+                            <li>
+                                <a class="nav-link active " aria-current="page" href="#home">Home <i
+                                        class="fa-solid fa-angle-down"></i> </a>
+                                <div class="drop-down">
+                                    <ol>
+                                        <li>
+                                            <a href="#">Home One </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home Two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Home Three</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="nav-link " aria-current="page" href="#about">About<i
+                                        class="fa-solid fa-angle-down"></i> </a>
+                                <!-- <div class="drop-down">
+                                    <ol>
+                                        <li>
+                                            <a href="#">Shop </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shop Cart</a>
+                                        </li>
+                                    </ol>
+                                </div> -->
+                            </li>
+
+                            <li>
+                                <a class="nav-link  " aria-current="page" href="#travel">Travel <i
+                                        class="fa-solid fa-angle-down"></i> </a>
+                                <!-- <div class="drop-down">
+                                    <ol>
+                                        <li>
+                                            <a href="#">Explore By Destination </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Travel Map</a>
+                                        </li>
+                                    </ol>
+                                </div> -->
+                            </li>
+
+
+
+                            <li>
+                                <a class="nav-link  " aria-current="page" href="#blog">Blog<i
+                                        class="fa-solid fa-angle-down"></i> </a>
+                                <!-- <div class="drop-down">
+                                    <ol>
+                                        <li>
+                                            <a href="#">Blog Layout </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog Details Layout</a>
+                                        </li>
+                                    </ol>
+                                </div> -->
+                            </li>
+                            <!-- <li>
+                                <a class="nav-link " aria-current="page" href="#faq">FAQ<i
+                                        class="fa-solid fa-angle-down"></i> </a>
+
+                            </li> -->
+                            <li>
+                                <a class="nav-link " aria-current="page" href="#contact">Contact us<i
+                                        class="fa-solid fa-angle-down"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" icon justify-content-end" style="font-size: 20px; padding: 0px; color: #525252;">
+                <a href="#"><i class="fa-brands fa-square-facebook" style="padding: 5px;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="padding: 5px;"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram" style="padding: 5px;"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter" style="padding: 5px;"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest" style="padding: 5px;"></i></a>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+    <div class="offcanvas offcanvas-start   text-bg-light " data-bs-backdrop="false" tabindex="-1" id="header-menu"
+        aria-labelledby="staticBackdropLabel" style="border: 0 !important;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">
+                <img src="assets/img/logo-black.png" alt="">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav text-dark">
+                <a class="nav-link active " aria-current="page" href="home">Home</a>
+                <a class="nav-link  " href="travel">travel</a>
+                <a class="nav-link  " href="#">pages</a>
+
+                <a class="nav-link   " href="#">blog</a>
+                <a class="nav-link  " href="#">shop</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <h3 id="home"></h3>
+    <section class="sec1" style="height: 730px;">
+
+        <div class="row ">
+            <div class="col-12 d-lg-flex">
+                <div class="col-12  content  col-lg-6" style="margin-top: 50px;">
+                    <h2> Adventure</h2>
+                    <h1> Exploring Bali’s Beaches And Beyond</h1>
+                    <a href="#"><button class="btn">Read More</button> </a>
+                </div>
+
+                <div class="img-fluid">
+                    <img src="assets/img/1.PNG" alt="" width="760px" height="650px">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <h3 id="about"></h3>
+    <section class="sec5" style="padding-bottom: 150px; padding-top: 100px; position: relative;">
+        <div style="position: absolute; bottom: 0; ">
+            <img src="assets/img/section-shape-1.png" alt="" width="100%" height="100%"
+                style="bottom:150px !important; right:0px !important; position: relative;">
+        </div>
+        <div class="container">
+            <div class="row  row-cols-xl-2  row-cols-1 grid-2" style="z-index: 99999;">
+
+                <div class="img" style="z-index: 999999;">
+                    <img src="assets/img/blog-18.png" alt="" width="482px" height="482px" style="object-fit: cover; object-fit: fill; object-position: center;">
+                    <img src="assets/img/blog-21.png" alt="" width="200px" height="285px" style=" 
+           margin: -230px 0px 0px 0px;
+        padding: 0px 0px 0px 265px; width: 90%; object-fit: cover; object-fit: fill; object-position: center; ">
+                </div>
+
+                <div class="content" style="padding-top: 50px; z-index: 999999999999;">
+                    <h4>About Travel Tips</h4>
+                    <h1>Travel Essential Tips </h1>
+                    <p>Penatibus sit ante ac sed tortor nisi ut a sapien. Nisl sit dolor nec pellentesque. Convallis
+                        vulputate leo volutpat massa ut nascetur risus amet.
+
+                        Venenatis diam faucibus aliquet lacinia volutpat aliquam consectetur. Enim enim nunc donec
+                        facilisi enim sit potenti fames feugiat. Eu tellus maecenas lorem vitae ante cursus ultricies.
+                        at pharetra ut arcu orci sed sapien diam vestibulum.</p>
+                    <div>
+                        <div class="col-12 d-flex">
+                            <button type="submit" class="btn  " style="z-index: 99999;">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <h3 id="travel"></h3>
+    <section class="sec2" style="height: 730px;">
+
+        <div class="row ">
+            <div class="col-12 d-lg-flex">
+
+
+                <div class="img-fluid  col-6">
+                    <img src="assets/img/3.PNG" alt="" width="700px" height="600px"
+                        style="position: absolute; background-image:url(https://themes.hibotheme.com/prala/wp-content/uploads/2023/12/about-img-2.png);">
+
+                    <img src="assets/img/4.png" class="img1" style="transform:rotate(-10deg); padding-top: 350px; width: 816px !important; position: relative;
+        right: 22px;   padding-left: 500px;  ">
+                </div>
+
+                <div class="col-12  content  col-lg-6">
+                    <h2> Adventure</h2>
+                    <h1> My Best Travel Tips Are To Save <br>Money And Travel Very Comfortably</h1>
+
+                    <p style="padding-top: 15px;"> Penatibus sit ante ac sed tortor nisi ut a sapien. Nisl
+                        sit dolor nec<br> pellentesque. Convallis vulputate leo volutpat massa ut
+                        nascetur<br> risus amet.</p>
+
+                    <p style="padding-bottom: 15px;"> Venenatis diam faucibus aliquet lacinia volutpat
+                        aliquam consectetur.<br> Enim enim nunc donec facilisi enim sit potenti fames
+                        feugiat. Eu <br>tellus maecenas lorem vitae ante cursus ultricies. Nunc at
+                        pharetra<br> ut arcu orci sed sapien diam vestibulum.
+
+                    </p>
+
+                    <a href="#"><button class="btn">Read More</button> </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <h3 id="blog"></h3>
+    <section class="sec4" style="padding :100px  0px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="title text-center">
+                    <h2>Amazing Travel Blog</h2>
+                    <p>
+                        Featured From The Blog
+                    </p>
+                </div>
+
+                <div class="row  row-cols-lg-3   row-cols-2 justify-content-center ">
+                    <div class="blog  ">
+                        <div class="blog-img">
+                            <a href="https://www.imaginarycloud.com/blog/importance-of-artificial-intelligence-for-a-web-developer/"
+                                target="_blank">
+                                <img src="assets/img/6.webp" alt="" width="260px" height="260px">
+                            </a>
+                        </div>
+
+                        <div class="blog-content">
+                            <a href="https://www.imaginarycloud.com/blog/importance-of-artificial-intelligence-for-a-web-developer/"
+                                target="_blank">
+                                <h2>Dec 10,2023</h2>
+                                <h1>Backpacker’s Guide To Sustainable Travel Reduced Environmental Impact.<i
+                                        class="fa-solid fa-arrow-up"></i></h1>
+                            </a>
+
+                            <p>Reduced Environmental Impact :
+                                Nisl sit dolor nec pellentesque. Convallis vulputate leo volutpat massa ut nascetur
+                                risus amet. Venenatis diam faucibus aliquet lacinia volutpat aliquam consectetur. Enim
+                                enim nunc donec facilisi enim sit potenti fames feugiat. Eu tellus maecenas lorem vitae
+                                ante cursus ultricies. </p>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="blog">
+                        <div class="blog-img">
+                            <a href="#" target="_blank">
+                                <img src="assets/img/7.png" alt="" width="260px" height="260px">
+                            </a>
+                        </div>
+
+                        <div class="blog-content">
+                            <a href="#" target="_blank">
+                                <h2>Dec 10,2023</h2>
+                                <h1>Wildlife Encounters and Backpacking Through National Parks.
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </h1>
+                            </a>
+                            <p class="justify-content-center"> Immersion In Culture :
+                                Sustainable travel is not just a trend; it’s a responsible and ethical way of exploring
+                                the world while minimizing your environmental and cultural impact. As a backpacker, you
+                                have a unique opportunity to embrace sustainability and immerse yourself in the local
+                                culture, leaving behind positive footprints in your wake.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="blog">
+                        <div class="blog-img" style="border:  0 !important;">
+                            <a href="#" target="_blank">
+                                <img src="assets/img/8.png" alt="" width="260px" height="260px"
+                                    style="border: 0 !important;  object-fit: cover; background-position: bottom;">
+                            </a>
+                        </div>
+
+                        <div class="blog-content">
+                            <a href="#" target="_blank">
+                                <h2>Dec 10,2023</h2>
+                                <h1>Tips For Staying Warm And Safe Backpacking In Winter The Essence Of Slow Travel.<i
+                                        class="fa-solid fa-arrow-up"></i>
+                                </h1>
+                            </a>
+
+                            <p>The Essence Of Slow Travel :
+                                Nisl sit dolor nec pellentesque. Convallis vulputate leo volutpat massa ut nascetur
+                                risus amet. Venenatis diam faucibus aliquet lacinia volutpat aliquam consectetur. Enim
+                                enim nunc donec facilisi enim sit potenti fames feugiat. Eu tellus maecenas lorem vitae
+                                ante cursus ultricies. at pharetra ut arcu orci sed sapien diam.
+
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- <h3 id="faq"></h3>
+    <section style="padding-bottom: 70px;">
+        <div class="container">
+            <div class="row">
+                <div class="accordion">
+                    <h1 style="font-family: 'Playfair Display'; margin-bottom: 30px;">Frequently Asked Questions</h1>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="accordion1">
+                        <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SEO, and
+                            why is it important for online businesses?</label>
+                        <div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of
+                            optimizing a website to improve its visibility on search engines like Google. It involves
+                            various techniques to enhance a site's ranking in search results. SEO is crucial for online
+                            businesses as it helps drive organic traffic, increases visibility, and ultimately leads to
+                            higher conversions.</div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <input type="checkbox" id="accordion2">
+                        <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How long does it
+                            take to see results from SEO efforts?</label>
+                        <div class="accordion-item-desc">The timeline for seeing results from SEO can vary based on
+                            several factors, such as the competitiveness of keywords, the current state of the website,
+                            and the effectiveness of the SEO strategy. Generally, it may take several weeks to months
+                            before noticeable improvements occur. However, long-term commitment to SEO is essential for
+                            sustained success.</div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <input type="checkbox" id="accordion3">
+                        <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the key
+                            components of a successful SEO strategy?</label>
+                        <div class="accordion-item-desc">A successful SEO strategy involves various components,
+                            including keyword research, on-page optimization, quality content creation, link building,
+                            technical SEO, and user experience optimization. These elements work together to improve a
+                            website's relevance and authority in the eyes of search engines.</div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <input type="checkbox" id="accordion4">
+                        <label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does mobile
+                            optimization impact SEO?</label>
+                        <div class="accordion-item-desc">Mobile optimization is crucial for SEO because search engines
+                            prioritize mobile-friendly websites. With the increasing use of smartphones, search engines
+                            like Google consider mobile responsiveness as a ranking factor. Websites that provide a
+                            seamless experience on mobile devices are more likely to rank higher in search results.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <input type="checkbox" id="accordion5">
+                        <label for="accordion5" class="accordion-item-title"><span class="icon"></span>What is the role
+                            of backlinks in SEO, and how can they be acquired?</label>
+                        <div class="accordion-item-desc">Backlinks, or inbound links from other websites to yours, play
+                            a significant role in SEO. They are considered a vote of confidence and can improve a site's
+                            authority. Quality over quantity is crucial when acquiring backlinks. Strategies for
+                            obtaining backlinks include creating high-quality content, guest posting, reaching out to
+                            industry influencers, and participating in community activities. It's important to focus on
+                            natural and ethical link-building practices.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <h3 id="contact"></h3>
+    <section style="padding: 20px 0px 90px;">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-12 ">
+                    <div class="title  text-center p-2 ">
+                        <h2 style="font-family: 'Playfair Display' ; font-size: 35px;">Contact US</h2>
+                        <p style="padding-bottom: 30px; text-transform: uppercase;"></p>
+                    </div>
+
+                    <div class="col-12 d-xl-flex">
+                        <div class=" col-xl-6  col-12 ">
+                            <div class="contact  text-center">
+                                <form>
+                                    <div class="input-box ">
+                                        <input type="text" class="text-black"  placeholder="First name:" required >
+                                        <input type="text" class="text-black"  placeholder="Last name:"    required> 
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="email" class="text-black"  placeholder="Email-id:"   required>
+                                        <input type="tel" class="text-black" placeholder="Contact-numaber:"   required>
+                                    </div>
+                                    <div class="text-msg">
+                                        <textarea class="text  text-black" id="" cols="30" rows="10"
+                                            placeholder="Message"    required></textarea>
+                                    </div>
+                                    <button class="btn  m-3"> Send Message</button>
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-xl-6  col-12 ">
+                            <div class="col-12  ">
+                                <div class="elementor-element elementor-element-7f9ec75 e-flex e-con-boxed e-con e-child"
+                                    data-id="7f9ec75" data-element_type="container"
+                                    style="width: 100%;z-index: 9999999; ">
+                                    <div class="e-con-inner">
+                                        <div class="elementor-element elementor-element-97444ba elementor-widget elementor-widget-google_maps"
+                                            data-id="97444ba" data-element_type="widget"
+                                            data-widget_type="google_maps.default">
+                                            <div class="elementor-widget-container">
+                                                <style>
+                                                    /*! elementor - v3.20.0 - 26-03-2024 */
+                                                    .elementor-widget-google_maps .elementor-widget-container {
+                                                        overflow: hidden
+                                                    }
+
+                                                    .elementor-widget-google_maps .elementor-custom-embed {
+                                                        line-height: 0
+                                                    }
+
+                                                    .elementor-widget-google_maps iframe {
+                                                        height: 696px
+                                                    }
+                                                </style>
+                                                <div class="elementor-custom-embed">
+                                                    <iframe loading="lazy"
+                                                        src="https://maps.google.com/maps?q=w%2013%20th%20ave%20denver&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
+                                                        title="w 13 th ave denver" aria-label="w 13 th ave denver"
+                                                        width="93%"
+                                                        style="margin-left: 30px;  border-radius: 50px  50px;"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="sec3" style="position: relative;  height: 630px;">
+        <div style="position: absolute; bottom: 0; ">
+            <img src="assets/img/section-shape-1.png" alt="" width="100%" height="100%"
+                style="bottom:150px !important; right:0px !important; position: relative;">
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 d-lg-flex  align-items-center" style="z-index: 999999;">
+                    <div class="col-6   col-xl-6  col-12    ">
+                        <img src="assets/img/newsletter-img.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-xl-6 col-12">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"   required>
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label"   >Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1"   required>
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="w-12">
+                <div class="prala  text-center"
+                    style="border-top: 1px solid rgba(171, 171, 171, 0.598); border-bottom: 1px solid rgba(171, 171, 171, 0.598); padding: 10px; margin-bottom: 5px;">
+                    <p style="margin-bottom: 0 !important;">@Prala is proudly owned by HiboTheme</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
